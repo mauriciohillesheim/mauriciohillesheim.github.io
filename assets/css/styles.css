@@ -1,0 +1,180 @@
+/* Reset de estilos */
+body, h1, h2, p, ul, li, a, img, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.media-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre a imagem e o vídeo */
+    flex-wrap: wrap; /* Torna o conteúdo responsivo */
+    margin-top: 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff; /* Cor de fundo do botão */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project {
+    margin-bottom: 15px;
+}
+
+.project a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Estilos Específicos para cada Página */
+
+header.contato {
+    background-color: #99b433;
+}
+
+/* Página Inicial (index.html) */
+body.index {
+    background-color: #f4f4f4;
+}
+
+header.index {
+    background: #333;
+}
+
+/* Página Sobre Mim (sobre.html) */
+body.sobre {
+    background-color: #e3f2fd;
+}
+
+header.sobre {
+    background: #0288d1;
+}
+
+/* Centralizar a imagem na página "Sobre Mim" */
+body.sobre img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Página Conhecimentos e Experiências (conhecimentos.html) */
+body.conhecimentos {
+    background-color: #f1f8e9;
+}
+
+header.conhecimentos {
+    background: #7cb342;
+}
+
+/* Página Conteúdo Divertido (divertido.html) */
+body.divertido {
+    background-color: #fff3e0;
+}
+
+header.divertido {
+    background: #fb8c00;
+}
+
+/* Menu Responsivo */
+@media (max-width: 768px) {
+    header nav ul {
+        text-align: center; /* Centraliza os itens do menu */
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block; /* Exibe os itens do menu em bloco para ocupar toda a largura disponível */
+        margin-bottom: 10px; /* Espaço entre os itens do menu */
+    }
+
+    header nav ul li a {
+        display: block; /* Faz com que o link ocupe toda a largura do item de lista */
+        padding: 15px; /* Aumenta a área clicável */
+    }
+}
